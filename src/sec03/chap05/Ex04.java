@@ -10,7 +10,7 @@ public class Ex04 {
         String str4 = String.valueOf(3.14f);
         String str5 = String.valueOf('가');
 
-
+        // 문자열로 변환-더 간단한 방법
         String str6 = true + "";
         String str7 = 123.45 + "";
 
@@ -38,6 +38,7 @@ public class Ex04 {
 
         //  ⚠️ 런타임 에러 발생. 하나씩 주석해제해서 테스트
         //  '실행'으로 테스트하거나, 디버그 후 콘솔 탭에서 확인해볼 것
+        // 컴파일 단계에선 오류가 나지 않음,하지만 런타임 오류
 
         //byte bytNum2 = Byte.parseByte("12345");
         //int intNum2 = Integer.parseInt("123.45");
