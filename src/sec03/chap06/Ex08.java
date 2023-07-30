@@ -8,9 +8,9 @@ public class Ex08 {
         // 💡 repeat : 문자열을 주어진 정수만큼 반복
         String str_a2 = str_a1.repeat(2);
         String str_a3 = str_a1
-                .concat(" ")
-                .repeat(3)
-                .trim();
+                .concat(" ") // 문자열 이어붙힘
+                .repeat(3) // 3번 반복
+                .trim(); // 양쪽의 공백을 없앰
 
 
         String str_b1 = "대한민국 다 job 구하라 그래";
@@ -43,7 +43,7 @@ public class Ex08 {
         String str_d1 = "하여튼 호의가 반복되면 권리인 줄 알아";
         String str_d2 = str_d1
                 .replace("하여튼", "아무튼")
-                .replace("호의", "호이".repeat(2))
+                .replace("호의", "호이".repeat(2)) // 호이 2번 반복
                 .replace("권리", "아기공룡 둘리");
 
 
@@ -53,7 +53,7 @@ public class Ex08 {
         //  전부 치환 / 첫 번째 일치부분만 치환
         String str_e2 = str_e1
                 .replaceAll("[=._]", "-")
-                .replaceFirst("[-@#]", ")");
+                .replaceFirst("[-@#]", ")"); // 첫번째만 괄호로 바꿈
 
     }
 }
