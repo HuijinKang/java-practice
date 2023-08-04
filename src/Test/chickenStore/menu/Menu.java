@@ -6,13 +6,16 @@ public class Menu {
 
     private int price;
 
+    private String taste;
+
     public Menu() {
 
     }
 
-    public Menu(String name, int price) {
+    public Menu(String name, int price, String taste) {
         this.name = name;
         this.price = price;
+        this.taste = taste;
     }
 
     public String getName() {
@@ -31,7 +34,13 @@ public class Menu {
         this.price = price;
     }
 
+    public String getTaste() {
+        return taste;
+    }
 
+    public void setTaste(String taste) {
+        this.taste = taste;
+    }
 //    public Menu friedChicken(){
 //        Menu menu = new Menu("후라이드치킨",18000);
 //        menu.setName("후라이드치킨");

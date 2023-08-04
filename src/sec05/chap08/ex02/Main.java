@@ -1,6 +1,6 @@
-package sec04.chap01;
+package sec05.chap08.ex02;
 
-public class Ex05 {
+public class Main {
     public static void main(String[] args) {
 
 
