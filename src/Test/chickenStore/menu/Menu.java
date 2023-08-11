@@ -6,16 +6,16 @@ public class Menu {
 
     private int price;
 
-    private String taste;
+    private String explanation;
 
     public Menu() {
 
     }
 
-    public Menu(String name, int price, String taste) {
+    public Menu(String name, int price, String explanation) {
         this.name = name;
         this.price = price;
-        this.taste = taste;
+        this.explanation = explanation;
     }
 
     public String getName() {
@@ -34,19 +34,13 @@ public class Menu {
         this.price = price;
     }
 
-    public String getTaste() {
-        return taste;
+    public String getExplanation() {
+        return explanation;
     }
 
-    public void setTaste(String taste) {
-        this.taste = taste;
+    public void setExplanation(String taste) {
+        this.explanation = explanation;
     }
-//    public Menu friedChicken(){
-//        Menu menu = new Menu("후라이드치킨",18000);
-//        menu.setName("후라이드치킨");
-//        price = 18000;
-//        return menu;
-//    }
 
     public String testChicken(){
         return "%s의 가격은 %d입니다".formatted(name,price);

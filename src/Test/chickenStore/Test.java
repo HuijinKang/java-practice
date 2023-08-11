@@ -1,6 +1,7 @@
 package Test.chickenStore;
 
 import Test.chickenStore.menu.various.Chicken;
+import Test.chickenStore.menu.various.ChickenMenus;
 
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ public class Test {
 
     int userMoney;//유저 머니
 
+    ChickenMenus chickenMenus = new ChickenMenus();
     Chicken friedChicken = new Chicken("후라이드 치킨",16000, "후라이드맛");
     Chicken spicyChicken = new Chicken("매운 치킨",19000, "매운맛");
     User user = new User(1000000, 0);
@@ -29,7 +31,7 @@ public class Test {
 //        }
         while (Action.b) {
 
-            System.out.println("\n" + action.payed(user, friedChicken));
+            System.out.println("\n" + action.payed(user, (Chicken) chickenMenus.getFried()));
             System.out.println("\n" + action.payed(user, spicyChicken));;
 
         }
